@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            border: 2px solid;
+            text-align: center;
+            height: 675px;
+        }
+        .head{
+            border: 1px solid black;
+            padding: 5px;
+            margin: 5px;
+            background-color: rgb(103, 100, 100);
+        }
+        .navig{
+            border: 1px solid;
+            padding: 5px;
+            background-color: aquamarine;
+        }
+        .mainsec{
+            display: flex;
+        }
+        .sec{
+            border: 1px solid;
+            padding: 5px;
+            margin: 5px;
+            flex-grow: 7;
+            height: 500px;
+            background-color: rgb(66, 173, 66);
+        }
+        .sechead{
+            border: 1px solid;
+            padding: 5px;
+            margin: 5px;
+            background-color: rgb(103, 100, 100);
+        }
+        .art{
+            border: 1px solid;
+            margin: 5px;
+            padding: 5px;
+            height: 425px;
+            background-color: palevioletred;
+        }
+        .arthead{
+            border: 1px solid;
+            margin: 5px;
+            padding: 5px;
+            background-color: rgb(103, 100, 100);
+        }
+        p{
+            border: 1px solid;
+            margin: 5px;
+            padding: 5px;
+            height: 125px;
+            background-color: rgb(83, 83, 146);
+        }
+        .artsec{
+            display: flex;
+            /* border: 1px solid; */
+            /* margin: 5px;
+            padding: 5px; */
+        
+        }
+        .para{
+            flex-grow: 5;
+        }
+        aside{
+            border: 1px solid;
+            margin: 5px;
+            padding: 5px;
+            flex-grow: 5;
+            background-color: rgb(222, 222, 74);
+            
+        }
+        .ftr{
+            border: 1px solid;
+            margin: 5px;
+            padding: 5px;
+            background-color: rgb(164, 227, 71);
+            height: 40px;
+        }
+
+        .sec2{
+            border: 1px solid;
+            margin: 5px;
+            padding: 5px;
+            flex-grow: 3;
+            background-color: rgb(180, 74, 74);
+        }
+        .sec2head{
+            border: 1px solid;
+            margin: 5px;
+            padding: 5px;
+            background-color: rgb(103, 100, 100);
+        }
+        .secnav{
+            border: 1px solid;
+            margin: 5px;
+            padding: 5px;
+            height: 420px;
+            background-color: skyblue;
+        }
+        .mainftr{
+            border: 1px solid;
+            margin: 5px;
+            padding: 5px;
+            background-color: rgb(164, 227, 71);
+            height: 40px;
+        }
+    </style>
+
+</head>
+<body>
+    Body
+    <header class="head">Header
+        <nav class="navig">Navigantion</nav>
+    </header>
+    <container class="mainsec">
+        <section class="sec">Section
+            <header class="sechead">Header</header>
+            <article class="art">Article
+                <header class="arthead">Header</header>
+                <p>Paraghraph 1</p>
+                <div class="artsec">
+                    <p class="para">Paraghraph 2</p>
+                    <aside>Aside</aside>
+                </div>
+                <footer class="ftr">Footer</footer>
+            </article>
+        </section>
+
+        <section class="sec2">Section
+            <header class="sec2head">Header</header>
+            <nav class="secnav">Navigation</nav>
+        </section>
+    </container>
+    <footer class="mainftr">Footer</footer>
+</body>
+</html>

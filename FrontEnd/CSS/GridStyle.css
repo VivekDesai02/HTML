@@ -1,0 +1,17 @@
+.Contaner{
+    height: 900px;
+    width: 70%;
+    background-color: bisque;
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    /* grid-template-rows:120px; */
+    /* grid-auto-columns:120px; */
+    /* grid-auto-rows: 120px; */
+    grid-gap: 20px;
+
+}
+.Item{
+    background-color: blueviolet;
+    height: 100px;
+    width: 100px;
+}

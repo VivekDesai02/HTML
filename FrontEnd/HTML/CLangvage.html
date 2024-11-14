@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>C Variables, Constants and Literals</title>
+    <style>
+        table,
+        tr,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>C Variables, Constants and Literals</h1>
+    <h3>Variables</h3>
+    <p>In programming, a variable is a container (storage area) to hold data.<br>
+        <br>
+        To indicate the storage area, each variable should be given a unique name (identifier). Variable names are just
+        the symbolic representation of a memory location. For example:
+    </p>
+
+    <div style="background-color: black; width: 300px; padding: 2px;">
+        <span style="color: purple;"> int</span><span style="color: white;"> playerScore =</span><span
+            style="color: brown;"> 95</span>;
+    </div>
+
+    <p>Here,<span style="border: 0.5px solid gray; padding: 0.3px;"> playerScore</span> is a variable of <span
+            style="border: 0.5px solid gray; padding: 0.3px;">int</span> type. Here, the variable is assigned an integer
+        value <span style="border: 0.5px solid gray; padding: 0.3px;"> 95</span>.<br>
+        <br>
+        The value of a variable can be changed, hence the name variable.
+    </p>
+
+    <div style="background-color: black; width: 300px; padding: 5px;">
+
+        <span style="color: purple;">char</span> <span style="color:white;"> ch =</span> <span
+            style="color: green;">'a'</span><span style="color: white;">;</span><br>
+        <span style="color: orange;">// some code</span><br>
+        <Snap style="color: white;">ch =</Snap> <span style="color: green;"> 'l'</span>
+        <Snap style="color: white;">;</Snap>
+
+    </div>
+
+    <h3>Rules for naming a variable</h3>
+
+    <ol>
+        <li>A variable name can only have letters (both uppercase and lowercase letters), digits and underscore.</li>
+        <li>The first letter of a variable should be either a letter or an underscore.</li>
+        <li>There is no rule on how long a variable name (identifier) can be. However, you may run into problems in some
+            compilers if the variable name is longer than 31 characters.</li>
+    </ol>
+
+    <p style="border: 0.2px solid gray; width: 700px;">
+        <b>Note:</b> You should always try to give meaningful names to variables. For example:<br> <span
+            style="border: 0.5px solid gray; padding: 0.3px;">firstName</span> is a better variable name than<span
+            style="border: 0.5px solid gray; padding: 0.3px;"> fn</span>.
+    </p>
+
+    <div style="background-color: black; width: 300px; padding: 5px;">
+        <span style="color: purple;">int</span> <span style="color:white;">number =</span><span style="color: brown;">
+            5</span><span style="color:white;">;</span><span style="color: orange;"> // integer variable</span><br>
+        <span style="color:white;">number =</span><span style="color: brown;"> 5.5</span><span
+            style="color:white;">;</span> <span style="color: orange;"> // error</span><br>
+        <span style="color: purple;">double</span><span style="color:white;"> number;</span> <span
+            style="color: orange;"> // error</span>
+    </div>
+
+    <p>
+        Here, the type of <span style="border: 0.5px solid gray; padding: 0.3px;"> number</span> variable is
+        <span style="border: 0.5px solid gray; padding: 0.3px;"> int</span>. You cannot assign a floating-point
+        (decimal) <br>
+        value <span style="border: 0.5px solid gray; padding: 0.3px;"> 5.5</span>
+        to this variable. Also, you cannot redefine the data type of the variable to<span
+            style="border: 0.5px solid gray; padding: 0.3px;"> double</span>.<br>
+        By the way, to store the decimal values in C, you need to declare its type to either <span
+            style="border: 0.5px solid gray; padding: 0.3px;"> double</span> or <span
+            style="border: 0.5px solid gray; padding: 0.3px;"> float</span>.
+        <br>
+        <br>Visit this page to learn more about<span style="color: blue;"> different types of data a variable can
+            store.</span>
+    </p>
+
+    <h3>Literals</h3>
+
+    <p>
+        Literals are data used for representing fixed values. They can be used directly in the code.<br>
+        For example: <span style="border: 0.5px solid gray; padding: 0.3px;">1</span>,
+        <span style="border: 0.5px solid gray; padding: 0.3px;">2.5</span>,
+        <span style="border: 0.5px solid gray; padding: 0.3px;">'c'</span> etc.<br>
+        <br>
+        Here,<span style="border: 0.5px solid gray; padding: 0.3px;"> 1</span>,<span
+            style="border: 0.5px solid gray; padding: 0.3px;"> 2.5</span>
+        and <span style="border: 0.5px solid gray; padding: 0.3px;">'c'</span> are literals. Why? You cannot assign
+        different values to these terms.
+    </p>
+
+    <h3>1. Integers</h3>
+    <p>An integer is a numeric literal(associated with numbers) without any fractional or<br>
+        exponential part. There are three types of integer literals in C programming:
+    </p>
+
+    <ul>
+        <li>decimal (base 10)</li>
+        <li>octal (base 8)</li>
+        <li>hexadecimal (base 16)</li>
+    </ul>
+
+    <p>For example:</p>
+
+    <div style="background-color: black; width: 300px; padding: 5px;">
+        <span style="color:darkgrey;">Decimal: 0, -9, 22 etc<br>
+            Octal: 021, 077, 033 etc<br>
+            Hexadecimal: 0x7f, 0x2a, 0x521 etc</span>
+    </div>
+
+    <p>
+        In C programming, octal starts with a<span style="border: 0.5px solid gray; padding: 0.3px;"> 0 </span>,
+        and hexadecimal starts with a<span style="border: 0.5px solid gray; padding: 0.3px;"> 0x </span>.
+    </p>
+    <h3>2. Floating-point Literals</h3>
+    <p>A floating-point literal is a numeric literal that has either a fractional form or an exponent form.<br> For
+        example:</p>
+    <div style="background-color: black; width: 300px; padding: 5px;">
+        <span style="color:darkgrey;">-2.0<br>
+            0.0000234<br>
+            -0.22E-5</span>
+    </div>
+
+    <p style="border: 0.2px solid gray; width: 700px;">
+        <b>Note:</b><span style="border: 0.5px solid gray; padding: 0.3px;"> E-5 = 10</span> <span
+            style="border: 0.5px solid gray; padding: 0.3px;">-5</span>
+    </p>
+
+    <h3>3. Characters</h3>
+    <p>
+        A character literal is created by enclosing a single character inside single quotation<br>
+        marks. For example:<span style="border: 0.5px solid gray; padding: 0.3px;"> 'a' </span>,
+        <span style="border: 0.5px solid gray; padding: 0.3px;">'m'</span>,
+        <span style="border: 0.5px solid gray; padding: 0.3px;"> 'F'</span>,<span
+            style="border: 0.5px solid gray; padding: 0.3px;"> '2'</span>,
+        <span style="border: 0.5px solid gray; padding: 0.3px;"> '}'</span> etc.
+    </p>
+
+    <h3>4. Escape Sequences</h3>
+    <p>
+        Sometimes, it is necessary to use characters that cannot be typed or has special meaning<br>
+        in C programming. For example: newline(enter), tab, question mark etc.<br>
+        <br>
+        In order to use these characters, escape sequences are used.
+    </p>
+
+    <table style="width: 100%;">
+        <tr>
+            <th>
+                Escape Sequences
+            </th>
+        </tr>
+        <tr>
+            <td>Escape Sequences</td>
+            <td>Character</td>
+        </tr>
+        <tr>
+            <td>\f</td>
+            <td>Form feed</td>
+        </tr>
+        <tr>
+            <td>\b</td>
+            <td>Backspace</td>
+        </tr>
+        <tr>
+            <td>\n</td>
+            <td>Newline</td>
+        </tr>
+        <tr>
+            <td>\r</td>
+            <td>Return</td>
+        </tr>
+        <tr>
+            <td>\t</td>
+            <td>Horizontal tab</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+
+<body>
+    <form>
+        <label>-------------- <span style="font-size: x-large;"><u>Student Information</u></span> --------------</label>
+        <p>
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Middle Name" required>
+            <input type="text" placeholder="Last Name" required>
+        </p>
+        <p>
+            <label>BOD: </label><input type="date" required>
+            <input type="radio" name="Gender">male
+            <input type="radio" name="Gender">Female
+        </p>
+        <p>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Mobile NO" minlength="6" maxlength="10">
+        </p>
+        <br>
+        <label>-------------- <span style="font-size: x-large;"><u>Address</u></span> --------------</label>
+        <p>
+            <textarea rows="2" cols="50" placeholder="Student Address"></textarea>
+        </p>
+        <p>
+            <input type="text" placeholder="City">
+            <input type="text" placeholder="State">
+        </p>
+        <p>
+            <input type="text" placeholder="Country">
+            <input type="text" placeholder="PIN Code">
+        </p>
+
+        <label>-------------- <span style="font-size: x-large;"><u>Courses</u></span> --------------</label>
+        <p>
+            <select>
+                <option aria-readonly="true">Select</option>
+                <option value="C">C</option>
+                <option value="CPP">CPP</option>
+                <option value="Java">Java</option>
+            </select>
+            <br>
+            <label>Select Type:</label>
+            <input type="radio" name="Type">Online
+            <input type="radio" name="Type">Offline
+        </p>
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+
+    </form>
+</body>
+
+</html>

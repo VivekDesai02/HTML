@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            padding: 5px;
+        }
+        .layout{
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+        }
+        .main{
+            display: flex;
+        }
+        #in{
+            flex-grow: 4;
+        }
+        #cs{
+            flex-grow: 7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="layout">Header</header>
+        <nav class="layout">Navigation</nav>
+        <div class="main layout">
+            <div class="layout" id="in">Index</div>
+            <div class="layout" id="cs">Content Section</div>
+        </div>
+        <div class="layout">Footers</div>
+    </div>
+</body>
+</html>
+

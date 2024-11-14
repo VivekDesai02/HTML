@@ -1,0 +1,42 @@
+ul
+{
+    list-style-type: none;
+    /* margin: 0; */
+    padding: 0;
+    border:  5px groove red;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-start;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    height: 500px;
+   
+}
+
+li
+{
+    background-image: url(../Images/Hot_cafe.jpg);
+    border:  2px solid;
+    margin: 20px;
+    padding: 20px;
+    height: 100px;
+    width: 100px;
+    color:red;
+
+}
+.flex1
+{
+    order: 1;
+    border: 4px double blue;
+   
+}
+.flex2
+{
+    order: 2;
+    border: 4px double yellow;
+   
+}
+
+
